@@ -1,3 +1,5 @@
+import Header from "./components/Header"
+import Landing from "./components/Landing"
 
 
 function App() {
@@ -5,7 +7,8 @@ function App() {
 
   return (
     <>
-      hi hi
+      <Header />
+      <Landing />
     </>
   )
 }

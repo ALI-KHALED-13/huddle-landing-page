@@ -37,7 +37,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Jost Regular', sans-serif;
+    font-family: 'Sans Regular', sans-serif;
     font-size: 1.6rem;
     scrollbar-width: thin;
     scrollbar-color: gray white;
