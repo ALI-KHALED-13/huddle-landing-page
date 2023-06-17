@@ -1,23 +1,23 @@
 import logo from '../../assets/images/logo_transparent.svg';
-import Button from '../Button';
+import { StyledHeader, StyledTryButton } from './styled';
 
 
 const Header =()=> {
 
   return (
-    <header style={{display: "flex", justifyContent:"space-between"}}>
+    <StyledHeader>
 
       <img src={logo} />
 
-      <Button 
+      <StyledTryButton 
         as="a"
         to="/"
         variant='secondary'
         color="#FF52C1"
       >
         Try for free
-      </Button>
-    </header>
+      </StyledTryButton >
+    </StyledHeader>
   );
 }
 

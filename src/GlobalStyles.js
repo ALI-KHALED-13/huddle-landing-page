@@ -4,6 +4,7 @@ import openSansRegular from './assets/fonts/OpenSans-Regular.ttf';
 import openSansSemiBold from './assets/fonts/OpenSans-semiBold.ttf';
 import openSansBold from './assets/fonts/OpenSans-Bold.ttf';
 import poppinsBold from './assets/fonts/Poppins-Bold.ttf';
+import { mediaQuery } from './utils/mediaQuery';
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -38,9 +39,15 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Sans Regular', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
     scrollbar-width: thin;
     scrollbar-color: gray white;
+  }
+  ${mediaQuery("md")}{
+    * {
+      font-size: 1.6rem;
+    }
   }
 
   *::-webkit-scrollbar {
@@ -63,14 +70,8 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
     scroll-behavior: smooth;
     background-color: white;
-    color-scheme: light dark;
   }
 
-  #root {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
 `;
 
 export default GlobalStyles;

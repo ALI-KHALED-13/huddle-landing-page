@@ -100,7 +100,7 @@ const Landing =()=> {
         </StyledHorizontalContainer>
       </HighWavedSection>
 
-      <LowWavedSection waveColor="black" >
+      <LowWavedSection waveColor="#00252E" >
         <StyledHorizontalContainer>
           <div>
             <StyledSectionHeader >Grow Together</StyledSectionHeader>

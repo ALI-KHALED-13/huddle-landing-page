@@ -23,9 +23,9 @@ export const StyledVerticalContainer = styled.div`
   flex-flow: column nowrap;
   align-items: center;
   gap: 3rem;
-  max-width: 110rem;
+  max-width: 150rem;
+  margin: 0 auto;
   min-height: 70vh;
-  margin: 0rem auto;
   & p {
     max-width: 60rem;
     text-align: center;

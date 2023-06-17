@@ -5,12 +5,11 @@ import { mediaQuery } from '../../utils/mediaQuery';
 
 export const StyledButton = styled.button`
   font-size: 1.4rem;
-  padding: 1.25rem 1.6rem 1.15rem;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   border-style: solid;
   border-width: 2px;
-  padding: 1rem 1.6rem;
+  padding: 1.1rem 4rem;
   text-decoration: none;
   text-transform: capitalize;
   cursor: pointer;
@@ -27,7 +26,8 @@ export const StyledButton = styled.button`
 export const StyledPrimaryButton = styled(StyledButton)`
   border-color: ${({color, theme}) => color};
   background-color: ${({color, theme}) => color};
-  color: ${({theme}) => theme.lightGray};
+  color: white;
+  font-weight: 700;
   &:hover {
     background-color: ${({$hoverColor, theme}) => $hoverColor};
     border-color: ${({$hoverColor, theme}) => $hoverColor};
