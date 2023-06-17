@@ -13,8 +13,11 @@ export const StyledFooter = styled.footer`
   }
   ${mediaQuery("md")}{
     flex-direction: row-reverse;
+    
+  }
+  ${mediaQuery("lg")}{
     & > div {
-      max-width: 30%;
+      max-width: 37%;
     }
   }
 `;
@@ -39,8 +42,8 @@ export const StyledFooterForm = styled.form`
     padding: 1.2rem 1.6rem;
   }
 
-  ${mediaQuery("md")}{
-    max-width: 30%;
+  ${mediaQuery("lg")}{
+    max-width: 37%;
   }
 
 `;

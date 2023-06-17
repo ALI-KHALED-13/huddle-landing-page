@@ -6,10 +6,10 @@ export const StyledLandingPage = styled.main`
   background-color: ${({theme}) => theme.white};
   min-height: 90vh;
   & > section:nth-child(even){
-    background-color: ${({theme}) => theme.lightGray};//#F6FBFF;
+    background-color: #F6FBFF;
   }
   & > section:nth-child(odd){
-    background-color: ${({theme}) => theme.white};
+    background-color: white;
   }
 `;
 
@@ -23,7 +23,7 @@ export const StyledVerticalContainer = styled.div`
   flex-flow: column nowrap;
   align-items: center;
   gap: 3rem;
-  max-width: 150rem;
+  max-width: 140rem;
   margin: 0 auto;
   min-height: 70vh;
   & p {

@@ -38,7 +38,7 @@ const Landing =()=> {
 
   return (
     <StyledLandingPage ref={landingPageRef}>   
-      <HighWavedSection waveColor="lightGray">
+      <HighWavedSection waveColor="#F6FBFF">
         <StyledVerticalContainer>
           <StyledSectionHeader> Build The Community Your Fans Will Love </StyledSectionHeader>
           <StyledParagraph>
@@ -59,7 +59,7 @@ const Landing =()=> {
         
       </HighWavedSection>
 
-      <MidWavedSection waveColor="lightGray">
+      <MidWavedSection waveColor="white">
         <StyledHorizontalContainer>
           <div>
             <StyledSectionHeader >Grow Together</StyledSectionHeader>
@@ -72,7 +72,7 @@ const Landing =()=> {
         </StyledHorizontalContainer>
       </MidWavedSection>
       
-      <LowWavedSection waveColor="white" >
+      <LowWavedSection waveColor="#F6FBFF" >
         <StyledHorizontalContainer>
           <div>
             <StyledSectionHeader >Grow Together</StyledSectionHeader>
@@ -87,7 +87,7 @@ const Landing =()=> {
 
       
 
-      <HighWavedSection waveColor="lightGray" >
+      <HighWavedSection waveColor="white" >
         <StyledHorizontalContainer>
           <div>
             <StyledSectionHeader >Grow Together</StyledSectionHeader>
