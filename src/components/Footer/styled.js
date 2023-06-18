@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { mediaQuery } from "../../utils/mediaQuery";
 
 
@@ -37,15 +37,21 @@ export const StyledFooterForm = styled.form`
     line-height: 1.8;
     margin-bottom: 1.6rem;
   }
-  & > input {
-    border-radius: 0.6rem;
-    padding: 1.2rem 1.6rem;
-  }
 
   ${mediaQuery("lg")}{
     max-width: 37%;
   }
 
+`;
+
+export const StyledEmailInput = styled.input`
+  width: 100%;
+  border-radius: 0.6rem;
+  padding: 1.2rem 1.6rem;
+  &:focus {
+    outline: none;
+  }
+  ${({emailSent})=> emailSent && css`border: 1px solid rgb(255 67 153);`}
 `;
 
 export const StyledWhiteLogoImg = styled.img`

@@ -10,8 +10,8 @@ export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.4rem;
-  & > img {height: 2.5rem;}
+  padding: 2.3rem;
+  & > img {height: 2.4rem;}
 
   ${mediaQuery("md")}{
     padding: 8rem;
