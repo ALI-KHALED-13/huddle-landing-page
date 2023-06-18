@@ -26,7 +26,7 @@ const Footer =()=> {
               emailSent={emailSent}
             />
             {emailSent ? (
-              <span style={{position: "absolute", top:"105%", left: 0, fontSize: 12, color: "rgb(255 67 153)"}}>
+              <span style={{position: "absolute", top:"103%", left: 0, fontSize: 12, color: "rgb(255 67 153)"}}>
                 Check your email please
               </span>
             ): null}
@@ -52,11 +52,11 @@ const Footer =()=> {
           <StyledFooterContact>
             <p>
               <PhoneCall size={24} color="white" weight="fill"/>
-                Phone: +1-543-123-4567
+                Phone: <a href="tel:+15431234567">+1-543-123-4567</a>
             </p>
             <p style={{marginBottom: 60}}>
               <img src={Gmail} alt="email" height={24}/>
-                example@huddle.com
+              <a href="mailto:example@huddle.com">example@huddle.com</a>
             </p>
             <FacebookLogo size={40} color="#faf4f4" weight="fill" />
             <InstagramLogo size={40} color="#faf4f4" />

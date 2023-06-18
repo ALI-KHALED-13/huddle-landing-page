@@ -63,13 +63,16 @@ export const StyledWhiteLogoImg = styled.img`
 
 export const StyledFooterContact = styled.address`
   margin: 2rem 0; 
-
+  font-style: normal;
   & > p {
     width: 100%;
     display: flex;
     gap: 1.6rem;
     align-items: center;
     padding-bottom: 1.6rem;
+  }
+  & > p > a {
+    color: inherit;
   }
 
   & > svg {

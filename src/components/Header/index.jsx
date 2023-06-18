@@ -7,7 +7,7 @@ const Header =()=> {
   return (
     <StyledHeader>
 
-      <img src={logo} />
+      <img src={logo} alt="logo"/>
 
       <StyledTryButton 
         as="a"

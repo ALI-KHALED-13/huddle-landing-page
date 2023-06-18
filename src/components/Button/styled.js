@@ -27,13 +27,14 @@ export const StyledButton = styled.button`
 `;
 
 export const StyledPrimaryButton = styled(StyledButton)`
-  border-color: ${({color, theme}) => color};
-  background-color: ${({color, theme}) => color};
+  border-color: ${({color}) => color};
+  background-color: ${({color}) => color};
   color: white;
   font-weight: 700;
+  box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
   &:hover {
-    background-color: ${({$hoverColor, theme}) => $hoverColor};
-    border-color: ${({$hoverColor, theme}) => $hoverColor};
+    background-color: ${({$hoverColor}) => $hoverColor};
+    border-color: ${({$hoverColor}) => $hoverColor};
   }
 `;
 

@@ -14,7 +14,7 @@ export const StyledHeader = styled.header`
   & > img {height: 2.4rem;}
 
   ${mediaQuery("md")}{
-    padding: 8rem;
+    padding: 7rem;
     & > img {height: 4rem;}
   }
 `;
@@ -27,7 +27,7 @@ export const StyledTryButton = styled(StyledSecondaryButton)`
   line-height: 2.2;
   ${mediaQuery("md")}{
     font-size: 1.5rem;
-    padding: 0.9rem 3rem;
-    border-radius: 2rem;
+    padding: 0.5rem 4rem;
+    border-radius: 3rem;
   }
 `;
