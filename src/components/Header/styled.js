@@ -5,7 +5,7 @@ import { StyledSecondaryButton } from "../Button/styled";
 
 
 export const StyledHeader = styled.header`
-  max-width: 160rem;
+  max-width: 150rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

@@ -8,7 +8,6 @@ import {
 import { 
   StyledHorizontalContainer,
   StyledLandingPage,
-  StyledParagraph,
   StyledSectionHeader,
   StyledStatsContainer,
   StyledVerticalContainer
@@ -44,12 +43,12 @@ const Landing =()=> {
     <StyledLandingPage ref={landingPageRef}>   
       <HighWavedSection waveColor="#F6FBFF">
         <StyledVerticalContainer>
-          <StyledSectionHeader> Build The Community Your Fans Will Love </StyledSectionHeader>
-          <StyledParagraph>
+          <StyledSectionHeader className="big"> Build The Community Your Fans Will Love </StyledSectionHeader>
+          <p>
             Huddle re-imagines the way we build communities.
             You have a voice, but so does your audience.
             Create connections with your users as you engage in genuine discussion. 
-          </StyledParagraph>
+          </p>
           <Button
             color="#FF52C1"
             hoverColor="#FF8ED7"
@@ -79,12 +78,12 @@ const Landing =()=> {
         <StyledHorizontalContainer>
           <div>
             <StyledSectionHeader >Grow Together </StyledSectionHeader>
-            <StyledParagraph>
+            <p>
               Generate meaningful discussions with your audience and build a strong, loyal community.
               Think of the insightful conversations you miss out on with traditional feedback forms. 
-            </StyledParagraph>
+            </p>
           </div>
-          <img src={growTogether} alt="Growth" loading="lazy" width="90%" height="auto" className="even"/>
+          <img src={growTogether} alt="Growth" loading="lazy" width="90%" height="auto" className="odd"/>
         </StyledHorizontalContainer>
       </MidWavedSection>
       
@@ -92,10 +91,10 @@ const Landing =()=> {
         <StyledHorizontalContainer>
           <div>
             <StyledSectionHeader >Flowing Conversations</StyledSectionHeader>
-            <StyledParagraph>
+            <p>
               You wouldn't paginate a conversation in real life, so why do it online?
               Our threads have just-in-time loading for a more natural flow.
-            </StyledParagraph>
+            </p>
           </div>
           <img src={flowingConvo} alt="flowing convo" loading="lazy" width="90%" height="auto" className="even"/>
         </StyledHorizontalContainer>
@@ -107,28 +106,31 @@ const Landing =()=> {
         <StyledHorizontalContainer>
           <div>
             <StyledSectionHeader >Your Users</StyledSectionHeader>
-            <StyledParagraph>
+            <p>
               It takes no time at all to integrate Huddle with your app's authentication solution.
               This means, once signed in to your app, your users can start chatting immediately.
-            </StyledParagraph>
+            </p>
           </div>
-          <img src={usersSVg} alt="Growth" loading="lazy" width="90%" height="auto" className="even"/>
+          <img src={usersSVg} alt="Growth" loading="lazy" width="90%" height="auto" className="odd"/>
         </StyledHorizontalContainer>
       </HighWavedSection>
 
-      <LowWavedSection waveColor="#00252E" >
-        <StyledHorizontalContainer>
-          <StyledSectionHeader>Ready to build your community?</StyledSectionHeader>
+      <HighWavedSection waveColor="#00252E" >
+        <StyledHorizontalContainer style={{gap: 45, flexWrap: "wrap"}}>
+          <StyledSectionHeader style={{width: "100%", textAlign: "center"}}>
+            Ready to build your community?
+          </StyledSectionHeader>
           <Button
             color="#FF52C1"
             hoverColor="#FF8ED7"
             as="a"
             to="#"
+            style={{marginBottom: 80}}
           >
             Get Started For Free
           </Button>
         </StyledHorizontalContainer>
-      </LowWavedSection>
+      </HighWavedSection>
 
     </StyledLandingPage>
   );

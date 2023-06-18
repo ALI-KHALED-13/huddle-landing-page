@@ -21,6 +21,9 @@ export const StyledButton = styled.button`
   &:disabled:hover {
     background-color: ${({color}) => color};
   }
+  ${mediaQuery('md')} {
+    font-size: 1.6rem;
+  }
 `;
 
 export const StyledPrimaryButton = styled(StyledButton)`
@@ -51,8 +54,4 @@ export  const StyledSecondaryButton = styled(StyledButton)`
     color: ${({color}) => color};
   }
   
-  ${mediaQuery('md')} {
-    padding: 1.25rem 2.4rem 1.15rem;
-    font-size: 1.6rem;
-  }
 `;

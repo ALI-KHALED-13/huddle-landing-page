@@ -17,7 +17,24 @@ export const StyledSectionHeader = styled.h1`
   text-align: center;
   text-transform: capitalize;
   font-family: "Poppins Bold";
-  font-size: 2.4rem;
+  font-size: 2rem;
+  &.big {
+    font-size: 2.4rem;
+  }
+  
+  ${mediaQuery("md")}{
+    text-align: left;
+    font-size: 3rem;
+    &.big {
+      font-size: 3.6rem;
+    }
+  }
+  ${mediaQuery("lg")}{
+    font-size: 4rem;
+    &.big {
+      font-size: 4.8rem;
+    }
+  }
 `;
 
 export const StyledVerticalContainer = styled.div`
@@ -25,14 +42,22 @@ export const StyledVerticalContainer = styled.div`
   flex-flow: column nowrap;
   align-items: center;
   gap: 3rem;
-  max-width: 140rem;
+  max-width: 130rem;
   margin: 0 auto;
   min-height: 70vh;
   padding: 1rem;
   & p {
     max-width: 60rem;
     text-align: center;
+    margin: 1rem 0;
   }
+
+  ${mediaQuery("md")}{
+    & p {
+      font-size: 2rem;
+    }
+  }
+  
 `;
 
 
@@ -54,10 +79,19 @@ export const StyledHorizontalContainer = styled(StyledVerticalContainer)`
   & img.slide {
     transform: translateY(0%);
   }
+  & p {
+      font-size: 1.4rem;
+  }
 
   ${mediaQuery("md")}{
     flex-direction: row;
     justify-content: center;
+    
+    & p {
+      text-align: left;
+      font-size: 1.6rem;
+    }
+    
     & img {
       width: 55%;
       transform: translate(95%, 0);
@@ -88,16 +122,16 @@ export const StyledStatsContainer = styled.article`
   }
   & > div > p {
     color: #808E9A;
+    text-align: center;
+  }
+  ${mediaQuery("md")}{
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3.5rem;
+    & > div {
+    width: auto;
+  }
   }
 `;
 
-export const StyledParagraph = styled.p`
-  margin: 1rem 0;
-  ${mediaQuery("md")}{
-    font-size: 1.9rem;
-  }
-  ${mediaQuery("lg")}{
-    font-size: 2.2rem;
-  }
-`;
 
