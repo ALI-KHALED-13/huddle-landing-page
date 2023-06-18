@@ -3,7 +3,7 @@ import { mediaQuery } from "../../utils/mediaQuery";
 
 
 export const StyledLandingPage = styled.main`
-  background-color: ${({theme}) => theme.white};
+  background-color: white;
   min-height: 90vh;
   & > section:nth-child(even){
     background-color: #F6FBFF;
@@ -13,9 +13,11 @@ export const StyledLandingPage = styled.main`
   }
 `;
 
-export const StyledSectionHeader = styled.h2`
+export const StyledSectionHeader = styled.h1`
   text-align: center;
   text-transform: capitalize;
+  font-family: "Poppins Bold";
+  font-size: 2.4rem;
 `;
 
 export const StyledVerticalContainer = styled.div`
@@ -26,6 +28,7 @@ export const StyledVerticalContainer = styled.div`
   max-width: 140rem;
   margin: 0 auto;
   min-height: 70vh;
+  padding: 1rem;
   & p {
     max-width: 60rem;
     text-align: center;
@@ -67,6 +70,24 @@ export const StyledHorizontalContainer = styled(StyledVerticalContainer)`
     & img.slide {
       transform: translate(0, 0);
     }
+  }
+`;
+
+export const StyledStatsContainer = styled.article`
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+  & > div {
+    width: 50%;
+    margin: 0 auto;
+  }
+  & > div > h3 {
+    font-size: 5.5rem;
+    font-family: 'Sans Bold';
+  }
+  & > div > p {
+    color: #808E9A;
   }
 `;
 

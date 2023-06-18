@@ -6,10 +6,10 @@ import { mediaQuery } from '../../utils/mediaQuery';
 export const StyledButton = styled.button`
   font-size: 1.4rem;
   border: none;
-  border-radius: 2rem;
+  border-radius: 2.5rem;
   border-style: solid;
   border-width: 2px;
-  padding: 1.1rem 4rem;
+  padding: 1rem 4rem;
   text-decoration: none;
   text-transform: capitalize;
   cursor: pointer;

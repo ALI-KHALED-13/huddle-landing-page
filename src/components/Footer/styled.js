@@ -6,6 +6,7 @@ export const StyledFooter = styled.footer`
   background-color: #00252E;
   padding: 6rem 2.8rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 10rem;
   & > * {
@@ -13,7 +14,6 @@ export const StyledFooter = styled.footer`
   }
   ${mediaQuery("md")}{
     flex-direction: row-reverse;
-    
   }
   ${mediaQuery("lg")}{
     & > div {

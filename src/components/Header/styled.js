@@ -11,7 +11,7 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 2.4rem;
-  & > img {height: 3rem;}
+  & > img {height: 2.5rem;}
 
   ${mediaQuery("md")}{
     padding: 8rem;
