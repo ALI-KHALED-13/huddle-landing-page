@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 import openSansRegular from './assets/fonts/OpenSans-Regular.ttf';
-import openSansSemiBold from './assets/fonts/OpenSans-semiBold.ttf';
+import openSansSemiBold from './assets/fonts/OpenSans-SemiBold.ttf';
 import openSansBold from './assets/fonts/OpenSans-Bold.ttf';
 import poppinsBold from './assets/fonts/Poppins-Bold.ttf';
 import { mediaQuery } from './utils/mediaQuery';
